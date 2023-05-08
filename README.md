@@ -21,6 +21,9 @@ Docker image converted from original LXD image.
 There will be udp and tcp versions of the config. For better performance use upd.
 Tcp version will be better for unstable conditions.
 
+## After installation
+See https://github.com/xtrime-ru/antizapret-vpn-docker/issues/2#issuecomment-1336112024
+
 ## Keys menagment
 Server keys are stored in easyrsa3/pki/ folder and client keys are copied to client_keys/. 
 Keys are persistent between container and host restarts.
