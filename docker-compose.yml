@@ -5,9 +5,7 @@ services:
     build: ./
     container_name: antizapret-vpn
     restart: unless-stopped
-    ports:
-      - "1194:1194/tcp"
-      - "1194:1194/udp"
+    network_mode: "host"
     volumes:
       - ./client_keys/:/root/easy-rsa-ipsec/CLIENT_KEY/
       - ./easyrsa3/:/root/easy-rsa-ipsec/easyrsa3/
